@@ -1,5 +1,5 @@
 import os
-from moviepy import *
+from moviepy.editor import *
 
 L =[]
 

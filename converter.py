@@ -31,7 +31,7 @@ def convert(file : str, outputDir : str):
         try:
             # Attempt to open file
             #presentation = powerpoint.Presentations.Open(FileName='lol.pptx', WithWindow=False)
-            presentation = powerpoint.Presentations.Open(FileName=file, WithWindow=False)
+            presentation = powerpoint.Presentations.Open(FileName=file, WithWindow=True)
         except:
             # If file cannot be found
             print('File cannot be found')
@@ -48,8 +48,8 @@ def convert(file : str, outputDir : str):
             print('Unable to export to video')
         
            
-        powerpoint.Quit()
-        del powerpoint
+        #powerpoint.Quit()
+        #del powerpoint
 
 if __name__ == "__main__":
 
